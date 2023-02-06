@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MartinCalc</title>
+        <!--Include the css and js files-->
+        <link rel="stylesheet" href = "mcalc.css">
+        <script type="text/javascript" src="mcalc.js"></script>
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Header-->
+        <div class = "header">
+            <p class = "header-title">Martin</p>
+        </div>
+        <div class = "site-contents">
+            <!--Live Reaction-->
+            <div class = "reaction-window">
+                <div class = "reaction-header">
+                    <div class = "line-header">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                    </div>
+                    <p class = "reaction-title">Live-Reaction</p>
+                    <div class = "line-header">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                    </div>
+                </div>
+                <div class = "reaction-struct">
+                    <img class = "reaction-gif-main" id = "main-gif" src = "mcalc-gifs/Waiting.gif">
+                    <img class = "reaction-gif" id = "zero-gif" src = "mcalc-gifs/Zero.gif">
+                    <img class = "reaction-gif" id = "one-gif" src = "mcalc-gifs/One-.gif">
+                    <img class = "reaction-gif" id = "two-gif" src = "mcalc-gifs/Two.gif">
+                    <img class = "reaction-gif" id = "three-gif" src = "mcalc-gifs/Three.gif">
+                    <img class = "reaction-gif" id = "four-gif" src = "mcalc-gifs/Four.gif">
+                    <img class = "reaction-gif" id = "five-gif" src = "mcalc-gifs/Five.gif">
+                    <img class = "reaction-gif" id = "six-gif" src = "mcalc-gifs/Six.gif">
+                    <img class = "reaction-gif" id = "seven-gif" src = "mcalc-gifs/Seven.gif">
+                    <img class = "reaction-gif" id = "eight-gif" src = "mcalc-gifs/Eight.gif">
+                    <img class = "reaction-gif" id = "nine-gif" src = "mcalc-gifs/Nine.gif">
+                </div>
+            </div>
+            
+            <div class = calc-window>
+                <div class = "calc-header">
+                    <div class = "line-header">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                    </div>
+                    <P class = "calc-title">Calculator</P>
+                    <div class = "line-header">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                        <hr class = "line">
+                    </div>
+                </div>
+                <!--Colored backgrounds-->
+                <div class = "calc-struct">
+                    <div class = "top-area">
+                        <img class = "red-square" src = "mcalc-images/redPaper.jpg">
+                    </div>
+                    <div class = "bottom-area">
+                        <div class = "left-area">
+                            <img class = "green-square" src = "mcalc-images/greenPaper.jpg">
+                        </div>
+                        <div class = "right-area">
+                            <div class = "top-right">
+                                <img class = "yellow-square" src = "mcalc-images/yellowPaper.jpg">
+                            </div>
+                            <div class = "bottom-right">
+                                <img class = "blue-square" src= "mcalc-images/bluePaper.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--BUTTONS-->
+                <div class = "button-container">
+                    <div class = "button-div">
+                        <div class = "first-col">
+                            <button class = "button" id = "c" onclick="display(event);playReaction(event)">c</button>
+                            <button class = "button" id = "7" onclick="display(event);playReaction(event)">7</button>
+                            <button class = "button" id = "4" onclick="display(event);playReaction(event)">4</button>
+                            <button class = "button" id = "1" onclick="display(event);playReaction(event)">1</button>
+                        </div>
+                        <div class = "second-col">
+                            <button class = "button" id = "&#61;" onclick="getInput(event);solveOperation();playReaction(event)">&#61;</button>
+                            <button class = "button" id = "8" onclick="display(event);playReaction(event)">8</button>
+                            <button class = "button" id = "5" onclick="display(event);playReaction(event)">5</button>
+                            <button class = "button" id = "2" onclick="display(event);playReaction(event)">2</button>
+                        </div>
+                        <div class = "third-col">
+                            <button class = "button" id = "&#47;" onclick="getInput(event);playReaction(event)">&#47;</button>
+                            <button class = "button" id = "9" onclick="display(event);playReaction(event)">9</button>
+                            <button class = "button" id = "6" onclick="display(event);playReaction(event)">6</button>
+                            <button class = "button" id = "3" onclick="display(event);playReaction(event)">3</button>
+                        </div>
+                        <div class = "fourth-col">
+                            <button class = "button" id = "&#42;" onclick="getInput(event);playReaction(event)">&#42;</button>
+                            <button class = "button" id = "&#43;" onclick="getInput(event);playReaction(event)">&#43;</button>
+                            <button class = "button" id = "&#45;" onclick="getInput(event);playReaction(event)">&#45;</button>
+                            <button class = "bottom__equalls_button" id = "&#61;" onclick="getInput(event);solveOperation();playReaction(event)">&#61;</button>
+                        </div>
+                    </div>
+            
+                    <div class = "others">
+                        <button class = "zero_button" id = "0" onclick="display(event)">0</button>
+                        <button class = "button" id = "." onclick="display(event)">.</button>
+                    </div>
+                </div>
+                <!--DISPLAY-->
+                <div class = "display" id = "text-box">0</div> <!--This is where we will show the numbers being typed in-->
+            </div>
+        </div>
+    </body>
+</html>

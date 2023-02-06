@@ -1,0 +1,329 @@
+/*Basic's (such as fonts */
+@font-face {
+    font-family: titleFont;
+    src: url(Motter\ Tektura\ Normal.ttf);
+}
+
+body{
+    background-color: rgb(255, 253, 245);
+}
+
+.site-contents{
+    height: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.103);
+    height: 80px;
+    border-style: solid;
+    border-width: 7px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-top: -8px;
+    margin-bottom: 0px;
+    margin-left: -8px;
+    margin-right:-8px;
+}
+
+.header-title{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/*Button properties*/
+.zero_button{
+    width: 142px;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: double;
+    border-width: 7px;
+    box-shadow: 5px -2px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 25px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.bottom__equalls_button{
+    height: 126px;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: double;
+    border-width: 7px;
+    box-shadow: 5px -2px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 25px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button{
+    width: 55px;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: double;
+    border-width: 7px;
+    box-shadow: 7px 5px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.button:active{
+    box-shadow: 0px 0px;
+    translate: 7px -5px;
+}
+
+.bottom__equalls_button:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.zero_button:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.button-container{
+    position: absolute;
+    margin-left: 137px;
+    margin-top: -410px;
+}
+
+.display{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 95px;
+    margin-top: -555px;
+    margin-left: 435px;
+    position: relative;
+}
+
+/*BUTTON TRANSITIONS*/
+
+
+
+/*Displaying*/
+
+.first-col, .second-col, .third-col, .fourth-col{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    height: 280px;
+}
+
+.fourth-col{
+    height: 350px;
+}
+
+.button-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 308px;
+    height: 195px;
+    margin-bottom: 100px;
+}
+
+.others{
+    display: flex;
+    justify-content: space-between;
+    width: 223px;
+}
+
+/*COLORED AREA*/
+.calc-struct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    height: 661px;
+    width: 560px;
+    margin:auto;
+    margin-top: -10px;
+    background-color: rgb(255, 253, 249);
+}
+
+.top-area{
+    border-style: double;
+    border-color: black;
+    border-width: 15px;
+    width: 465px;
+    height: 184px;
+}
+
+.bottom-area{
+    display: grid;
+    margin-right: 827px;
+}
+
+.red-square{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.43;
+    
+}
+
+.left-area{
+    border-style: solid;
+    border-color: black;
+    border-width: 7px;
+    width: 170px;
+    height: 390px;
+    margin-left: 859px;
+    border-top:0px;
+}
+
+.green-square{
+    display: block;
+    opacity: 0.38;
+    width: 100%;
+    height: 100%;
+}
+
+.right-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right{
+    border-style: solid;
+    border-color: black;
+    border-width: 7px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    width: 165px;
+    height: 155px;
+    margin-top: -397px;
+    margin-left: 1043px;
+}
+.yellow-square{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.33;
+}
+
+.bottom-right{
+    border-style: solid;
+    border-color: black;
+    border-width: 7px;
+    height:212px;
+    width: 235px;
+    margin-left: 1037px;
+}
+
+.blue-square{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.34;
+}
+
+/*ENTIRE CALCULATOR (CALC STRUCTURE, BUTTONS, & DISPLAY)*/
+.calc-window{
+    justify-content: center;
+    transform: scale(0.8);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+    width: 620px;
+    height: 760px;
+    box-shadow: 10px 10px 0px rgba(189, 189, 189, 0.7);
+}
+
+.calc-title{
+    display: inline-block;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.calc-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line-header{
+    display: inline-block;
+    width: 185px;
+    margin-top: -15px;
+}
+
+.line{
+    height: 1px;
+    background: black;
+    margin-bottom: -5px;
+}
+
+
+/*LIVE REACTION SECTION*/
+
+.reaction-window{
+    height: 350px;
+    width: 560px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    box-shadow: 10px 10px 0px rgba(189, 189, 189, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reaction-header{
+    height: 40px;
+    display: flex;
+    padding-top: 15px;
+    justify-content: center;
+}
+
+/*ReactioN Header*/
+.reaction-title{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 25px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.reaction-struct{
+    border-style: solid;
+    border-width: 5px;
+    width: 525px;
+    height: 270px;
+    background-color: white;
+}
+
+.reaction-gif, .reaction-gif-main{
+    position: absolute;
+    width: 480px;
+    height: 270px;
+    opacity: 0;
+}
+
+.reaction-gif-main{
+    opacity: 1;
+}
+
